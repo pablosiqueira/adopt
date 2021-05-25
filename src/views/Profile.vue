@@ -17,6 +17,7 @@
             </ul>  
             </div>
             <h4>Animais Cadastrados</h4>
+            <div class="profile-table">
             <table class="my_pets table table-striped table-hover">
                 <thead>
                   <tr>
@@ -35,6 +36,7 @@
                   </tr>
                 </tbody>
             </table>  
+            </div>
     </div>       
 </div>
 </template>
@@ -75,5 +77,11 @@ h4{
 }
 .list-norm{
   list-style-type: none;
+}
+.profile-table{
+  overflow-x: auto;
+}
+.my_pets{
+  text-align: center;
 }
 </style>

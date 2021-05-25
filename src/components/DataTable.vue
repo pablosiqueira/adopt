@@ -66,7 +66,6 @@ export default {
         button.innerHTML = 'Ver Contato'
         display = 'none'
       }
-      console.log(display)
       for(var i = 0; i<3; i++){
           document.getElementById('tr_' + i + '_key_'+ index).style.display = display
         }
@@ -79,6 +78,7 @@ export default {
 .pets-table{
   width: 100%;
   margin-top: 1rem;
+  overflow-x: auto;
 }
 .table{
   text-align: center!important;

@@ -1,7 +1,7 @@
 <template>
     <div id="bar">
         <div v-if="logged" class="up_title">
-        <h5>Bem vindo usuário {{this.$store.state.logged}}</h5>
+        <h5 id="welcome">Bem vindo usuário {{logged}}</h5>
         <button class="btn" @click="logout">Sair</button>
         </div>
      <div id="nav">
@@ -18,23 +18,7 @@ export default {
     computed:{
         logged(){
             return this.$store.state.logged;
-        },
-        userInSession:{
-            set(v){
-                this.$store.commit('changeUser',v)
-            },
-            get(){
-                return this.$store.state.userInSession
-            },
-        },
-        userLogged:{
-            set(v){
-                this.$store.commit('theuserLogged',v)
-            },
-            get(){
-                return this.$store.state.userLogged
-            },
-        }    
+        },  
     },
     methods:{
         logout: function(){
@@ -56,10 +40,19 @@ export default {
 }
 
 #nav a.router-link-exact-active {
-  color: #42b983;
+  color: red;
 }
 .up_title{
     margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#welcome, .btn{
+    margin-right: 1rem;
+    display: block;
+    margin-block: auto;
 }
 
 </style>
