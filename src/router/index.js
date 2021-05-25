@@ -4,6 +4,7 @@ import Home from '../views/Home.vue'
 import Add from '@/views/Add.vue'
 import Login from '@/views/Login.vue'
 import Profile from '@/views/Profile.vue'
+import NewUser from '@/views/NewUser.vue'
 
 Vue.use(VueRouter)
 
@@ -32,6 +33,11 @@ const routes = [
     path: '/profile',
     name: 'Profile',
     component: Profile,
+  },
+  {
+    path: '/newuser',
+    name: 'NewUser',
+    component: NewUser,
   },
   {
     path: '/about',

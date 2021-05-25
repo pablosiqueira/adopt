@@ -6,11 +6,12 @@
         <h5 v-if="logged" id="welcome">Bem vindo usuário {{logged}}</h5>
         <button v-if="logged" id="logout_up" class="btn" @click="logout">Sair</button>
         </div>
-     <div id="nav">
+     <div id="nav" class="container">
       <router-link to="/" >Home</router-link>
       <router-link v-if="logged" to="/add" >Cadastrar Animal</router-link>
-      <router-link to="/login" >Login/Cadastro</router-link>
+      <router-link to="/login" >Login</router-link>
       <router-link v-if="logged" to="/profile" >Meus Dados</router-link>
+      <router-link v-else to="/newuser" >Cadastrar Usuário</router-link>
     </div>
   </div>
 </template>
