@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <DataTable msg='Lista de Animais para Adoção' :pets="pets" category="full" idFilter= ""/>
-    <DataTable v-if="logged" msg='Animais No Seu Estado' :pets="petFilters" category="filter" idFilter= "_filter"/>
+    <DataTable v-if="logged" msg='Animais no seu Estado' :pets="petFilters" category="filter" idFilter= "_filter"/>
   </div>
 </template>
 

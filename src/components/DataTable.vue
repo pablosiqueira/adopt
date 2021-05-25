@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="home-table">
     <h2>{{msg}}</h2>
     <div class="pets-table">
     <table class="table table-striped table-hover">
@@ -85,5 +85,8 @@ export default {
 }
 .contact-tr{
   display: none;
+}
+.home-table{
+    margin-top: 1rem;
 }
 </style>
