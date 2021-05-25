@@ -144,7 +144,7 @@ export default {
     align-content: center;
 }
 .form-input{
-    max-width: 400px;
+    max-width: 500px;
     margin-block: .1rem;
 }
 .new-user{
