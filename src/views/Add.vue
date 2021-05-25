@@ -99,19 +99,6 @@ export default {
             this.pets.weight = ''
             this.pets.catdog = ''
         },
-
-        read: function(){ //test
-            console.log('read')
-            db.ref('users').child('127').get().then((snapshot) => {
-            if (snapshot.exists()) {
-            console.log(snapshot.val());
-            } else {
-            console.log("No data available");
-            }
-            }).catch((error) => {
-            console.error(error);
-            });
-        }
     }
 }
 </script>
