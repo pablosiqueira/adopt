@@ -81,7 +81,7 @@ h4{
 .profile-table{
   overflow-x: auto;
 }
-.my_pets{
+tr{
   text-align: center;
 }
 </style>
