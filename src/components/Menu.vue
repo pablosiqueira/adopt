@@ -2,7 +2,7 @@
     <div id="bar">
         <div v-if="logged" class="up_title">
         <h5 id="welcome">Bem vindo usuário {{logged}}</h5>
-        <button class="btn" @click="logout">Sair</button>
+        <button id="logout_up" class="btn" @click="logout">Sair</button>
         </div>
      <div id="nav">
       <router-link to="/">Home</router-link> |
@@ -49,7 +49,7 @@ export default {
     justify-content: center;
 }
 
-#welcome, .btn{
+#welcome, #logout_up{
     margin-right: 1rem;
     display: block;
     margin-block: auto;

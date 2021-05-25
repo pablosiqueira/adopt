@@ -42,8 +42,10 @@
       <input class="form-input" type="text" v-model="users.adress.zip" placeholder="Cep" required/>
       <label class="form-label" for="input-example-1">Cidade</label>
       <input class="form-input" type="text" v-model="users.adress.city" placeholder="Cidade" required/>
-      <label class="form-label" for="input-example-1">Estado(UF)</label>
-      <input class="form-input" type="text" v-model="users.adress.state" placeholder="UF" required/>
+      <label class="form-label" for="input-example-1">Selecione o Estado (UF)</label>
+      <select v-model="users.adress.state" class="form-select" required>
+        <option v-for="(brState,key) in brStates" :key="key" >{{brState}}</option>
+      </select>
       <h3 :class="errorOrsucess">{{msg}}</h3> 
       <input type="submit" class="btn" value="Criar Usuário"/>   
     </form>
@@ -76,7 +78,9 @@ export default {
             msg: '',
             msgLogin: '',
             userLogged: [],
-            errorOrsucess: ''
+            errorOrsucess: '',
+            brStates: ['AC', 'AL', 'AP', 'AM', 'BA' , 'CE', 'DF', 'ES', 'GO', 'MA', 'MT', 'MS', 'MG', 'PA', 'PB','PR','PE','PI',
+            'RJ','RN','RS','RO','RR','SC','SP','SE','TO']
         }
     },
     methods:{
