@@ -36,7 +36,6 @@ export default {
 #nav {
   padding: 15px;
   background-color: lightseagreen;
-  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -74,6 +73,12 @@ export default {
 .logo{
     max-height: 50px;
     margin-inline: 1rem;
+}
+
+@media (max-width: 500px){
+    #nav{
+        flex-direction: column;
+    }
 }
 
 </style>

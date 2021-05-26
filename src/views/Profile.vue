@@ -1,7 +1,7 @@
 <template>
 <div id="profile">
     <div class="my_data">
-    <h4>Usuário {{logged}}</h4>
+    <h4>Usuário <i>{{logged}}</i></h4>
           <div>
             <ul class="list-norm">
                 <li><b>Nome: </b>{{userInSession.name}}</li>
@@ -23,6 +23,7 @@
                   <tr>
                     <th>Tipo</th>
                     <th>Nome</th>
+                    <th>Raça</th>
                     <th>Idade</th>
                     <th>Peso</th>
                   </tr>
@@ -31,6 +32,7 @@
                   <tr v-for="(pet,key) in petFilters" :key="key">
                     <td>{{pet.type}}</td>
                     <td>{{pet.name}}</td>
+                    <td>{{pet.breed}}</td>
                     <td>{{pet.age}}</td>
                     <td>{{pet.weight}}</td>
                   </tr>
@@ -72,7 +74,7 @@ export default {
 </script>
 
 <style>
-h4{
+.my_data{
   margin-top: 1rem;
 }
 .list-norm{

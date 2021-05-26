@@ -30,11 +30,6 @@ const routes = [
     component: Profile,
   },
   {
-    path: '/profile',
-    name: 'Profile',
-    component: Profile,
-  },
-  {
     path: '/newuser',
     name: 'NewUser',
     component: NewUser,

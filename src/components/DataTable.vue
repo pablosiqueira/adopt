@@ -22,7 +22,7 @@
         <td>{{pet.age}}</td>
         <td>{{pet.weight}}</td>
         <td v-if="category == 'full'">{{pet.adress.city}}/{{pet.adress.state}}</td>
-        <td v-else>{{pet.adress.city}}/{{pet.adress.state}}</td>
+        <td v-else>{{pet.adress.city}}</td>
         <td>{{pet.user}} </td>
 
         <td><button class="btn" @click="expand(key,idFilter)" :id="'button_' + key + idFilter">Ver Contato</button></td>
