@@ -2,15 +2,18 @@
   <div id="app">
     <Menu />
     <router-view/>
+    <Footer />
   </div>
 </template>
 
 <script>
 import Menu from '@/components/Menu.vue'
+import Footer from '@/components/Footer.vue'
 
 export default {
   components:{
-    Menu
+    Menu,
+    Footer,
   }
 }
 </script>
@@ -23,6 +26,4 @@ export default {
   text-align: center;
   color: #2c3e50;
 }
-
-
 </style>

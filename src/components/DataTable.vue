@@ -38,7 +38,6 @@
         <tr :id="'tr_2_key_' + key + idFilter" class="contact-tr">
         <td colspan="8">Endereço: {{pet.adress.street}} N.º {{pet.adress.number}} | Cep: {{pet.adress.zip}}</td>
         </tr>
-
     </tbody>
     </table>
     </div>
@@ -52,7 +51,7 @@ export default {
         msg: {type:String},
         pets: {type:Array},
         category: {type:String},
-        idFilter: {type:String}
+        idFilter: {type:String},
     },
     methods:{
     expand: function(id,comp){ //Button function to show and hide contact

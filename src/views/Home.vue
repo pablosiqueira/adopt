@@ -14,7 +14,7 @@ import DataTable from '@/components/DataTable.vue'
 export default {
   name: 'Home',
   components:{
-    DataTable
+    DataTable,
   },
   data: () => ({
     pets: [],
